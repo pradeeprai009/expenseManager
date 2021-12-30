@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E822A</color> <!--For App Heading -->
+    <color name="colorPrimaryDark">#01531D</color> <!--For Top Menu  -->
+    <color name="colorAccent">#1E822A</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorbggray">#63C23030</color>
+    <color name="coloroutline">#0E0D0D</color>
+    <color name="button">#D65F5F</color>
+    <color name="type">#CE7B7B</color>
+    <color name="GREEN">#009933</color>
+    <color name="RED">#FF0033</color>
+</resources>

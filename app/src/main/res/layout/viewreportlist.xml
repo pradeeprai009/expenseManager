@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nodatareport"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/style_background_section"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="No Data Found"
+        android:textAlignment="center"
+        android:textColor="@color/coloroutline"
+        android:textSize="18sp" />
+
+    <ListView
+        android:layout_above="@+id/botm_lyr"
+        android:id="@+id/report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_background_section"
+        android:fontFamily="serif-monospace" />
+
+    <LinearLayout
+        android:id="@+id/botm_lyr"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/style_background_green"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="Total Cr."
+            android:textAlignment="center"
+            android:textColor="@color/coloroutline" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:background="@color/cardview_shadow_start_color" />
+
+        <TextView
+            android:id="@+id/total_report_amountcr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:hint="Amount"
+            android:textAlignment="center"
+            android:textColor="@color/GREEN" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:background="@color/cardview_shadow_start_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="Total Dr."
+            android:textAlignment="center"
+            android:textColor="@color/coloroutline" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:background="@color/cardview_shadow_start_color" />
+
+        <TextView
+            android:id="@+id/total_report_amountdr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:hint="Amount"
+            android:textAlignment="center"
+            android:textColor="@color/RED" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:background="@color/cardview_shadow_start_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="Ledger Total"
+            android:textAlignment="center"
+            android:textColor="@color/coloroutline" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:background="@color/cardview_shadow_start_color" />
+
+        <TextView
+            android:id="@+id/total_report_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:hint="Amount"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</RelativeLayout>

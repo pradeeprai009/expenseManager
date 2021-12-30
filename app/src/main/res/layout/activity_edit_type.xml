@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".UpdateEdit.EditType">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text="Update Expense type"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/style_background_section"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/style_background_section"
+                android:layout_margin="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_exp_type_id"
+                    android:inputType="number"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:hint="ID"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/edit_typename"
+                    android:background="@drawable/style_background_green"
+                    android:fontFamily="sans-serif-black"
+                    android:paddingLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Expense Name"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_typeamount"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Amount"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="cursive"
+                        android:layout_marginRight="10dp"
+                        android:id="@+id/update_type"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/update"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginTop="20dp"
+                        android:text="Update Data"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

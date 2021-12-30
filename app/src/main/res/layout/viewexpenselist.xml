@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <ListView
+        android:id="@+id/view_expense_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorPrimary"
+        android:fontFamily="serif-monospace" />
+
+    <TextView
+        android:id="@+id/nodataexp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/style_background_section"
+        android:fontFamily="serif-monospace"
+        android:padding="10dp"
+        android:text="No Data Found"
+        android:textAlignment="center"
+        android:textColor="@color/coloroutline"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

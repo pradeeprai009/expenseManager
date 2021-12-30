@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".UpdateEdit.DeleteType">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/style_background_section"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:visibility="gone"
+            android:text="Delete Expense Data"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/style_background_section"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            android:id="@+id/delete_exp_id"
+            android:hint="ID"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:background="@drawable/style_background_green"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:text="This Particular Row will be Deleted"
+            android:hint="ID"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="Cancel"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:background="@drawable/cancel"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/cancel_type_btn"/>
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="Delete"
+                android:fontFamily="cursive"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/delete"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/delete_exp_btn"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login.LoginPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/lg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="70dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/password"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:fontFamily="cursive"
+                            app:passwordToggleEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/mpin2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="20dp"
+                                android:drawableTint="@color/coloroutline"
+                                android:fontFamily="cursive"
+                                android:gravity="center"
+                                android:hint="MPIN"
+                                android:inputType="numberPassword"
+                                android:paddingLeft="40dp"
+                                android:textAlignment="center"
+                                android:textColor="@color/coloroutline"
+                                android:textColorHint="@color/coloroutline" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:text="Enter Your MPIN"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <com.alimuzaffar.lib.pin.PinEntryEditText
+                        android:id="@+id/txt_pin_entry"
+                        android:layout_width="250dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        app:pinAnimationType="fromBottom"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
+                        app:pinLineColors="@color/coloroutline"
+                        app:pinBackgroundIsSquare="true"
+                        android:textColor="@color/coloroutline"
+                        android:cursorVisible="true"
+                        android:digits="1234567890"
+                        android:inputType="numberPassword"
+                        android:maxLength="4"
+                        android:textIsSelectable="false"
+                        android:textSize="20sp" />
+
+
+                    <ImageView
+                        android:id="@+id/login"
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="35dp"
+                        android:background="@drawable/loginimage"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="#FDFEFE"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="2">
+
+                        <TextView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="Don't Have Account?"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/create_account"
+                            android:layout_width="210dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_weight="1"
+                            android:text="Create One"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/login_forget_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:padding="10dp"
+                        android:text="Forget Password?"
+                        android:fontFamily="serif-monospace"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

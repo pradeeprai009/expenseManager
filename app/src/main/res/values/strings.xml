@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Expense Manager</string>
+        <string name="navigation_drawer_open">Open navigation drawer</string>
+        <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone">Phone</string>
+    <string name="hint_mpin">MPIN</string>
+    <string name="hint_logout">Logout</string>
+    <string name="hint_date">Date</string>
+    <string name="hint_credit">Today Credit</string>
+    <string name="hint_debit">Today Debit</string>
+    <string name="month_credit">Month Credit</string>
+    <string name="month_debit">Month Debit</string>
+    <string name="exp_name">Expense Name</string>
+    <string name="transaction_type">Cr/Dr</string>
+    <string name="amount">Amount</string>
+    <string name="Description">Desc.</string>
+    <string name="Exp_type">Type</string>
+    <string name="Exp_date">Date</string>
+    <string name="hint_status">Status</string>
+    <string name="indian_sy">\u20B9</string>
+    <string name="delete_type">Delete Type</string>
+    <string name="delete_expense">Delete Expense</string>
+    <string name="edit_expense">Edit Expense</string>
+    <string name="add_type">Add Type</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="report">Report</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_welcome_login">WelcomeLogin</string>
+    <array name="spin">
+        <item>Options:-</item>
+        <item>Cr.</item>
+        <item>Dr.</item>
+    </array>
+
+    <array name="Status">
+        <item>Status:-</item>
+        <item>Active</item>
+        <item>Inactive</item>
+    </array>
+
+    <array name="exp_type">
+        <item>Pls select exp type</item>
+    </array>
+
+</resources>

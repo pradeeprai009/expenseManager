@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Welcome.WelcomeLogin"
+    tools:showIn="@layout/app_bar_welcome_login">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/style_background_section"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/welcomename"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:fontFamily="serif-monospace"
+            android:gravity="center"
+            android:text="Beware of little expenses. A small leak will sink a great ship"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/RED"
+            android:textStyle="italic|bold" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/lyr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/view_head_exp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:strokeColor="@color/coloroutline"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/file2" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/style_background_green"
+                        android:fontFamily="serif-monospace"
+                        android:text="View Expense "
+                        android:textAlignment="center"
+                        android:textColor="@color/coloroutline"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/view_head_exptype"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:strokeColor="@color/coloroutline"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/note" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img2"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:background="@drawable/style_background_green"
+                        android:text="View Expense Type"
+                        android:textAlignment="center"
+                        android:textColor="@color/coloroutline"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lyr2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyr1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/add_head_exp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:strokeColor="@color/coloroutline"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/add_files" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img3"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:text="Add Expense "
+                        android:background="@drawable/style_background_green"
+                        android:textAlignment="center"
+                        android:textColor="@color/coloroutline"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/add_head_exptype"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:strokeColor="@color/coloroutline"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="40dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/add_file" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img4"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:fontFamily="serif-monospace"
+                        android:text="Add Expense Type"
+                        android:background="@drawable/style_background_green"
+                        android:textAlignment="center"
+                        android:textColor="@color/coloroutline"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+

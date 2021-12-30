@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".AddExpense.AddExpense">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/style_background_section"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/style_background_section"
+                    android:src="@drawable/rupee2" />
+
+                <EditText
+                    android:id="@+id/exp_name"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/style_background_green"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:hint="@string/exp_name"
+                    android:padding="10dp"
+                    android:paddingLeft="15dp"/>
+
+                <EditText
+                    android:id="@+id/exp_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/style_background_green"
+                    android:fontFamily="serif-monospace"
+                    android:hint="@string/amount"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/style_background_green"
+                        android:layout_weight="0.5"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:fontFamily="serif-monospace"
+                            android:gravity="start"
+                            android:padding="5dp"
+                            android:textStyle="bold"
+                            android:text="@string/transaction_type"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/spin_trans"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/spin"
+                            android:textAlignment="textStart"
+                            android:fontFamily="serif-monospace"
+                            android:padding="5dp"
+                            android:gravity="start" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"
+                        android:background="@android:color/transparent"></View>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/style_background_green"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@color/colorPrimary"
+                            android:fontFamily="serif-monospace"
+                            android:padding="5dp"
+                            android:text="Type"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/spin_exptype"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:padding="5dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/exp_tvdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/style_background_green"
+                    android:drawableLeft="@drawable/date"
+                    android:drawableTint="@color/colorPrimary"
+                    android:fontFamily="serif-monospace"
+                    android:gravity="start"
+                    android:hint="Select Date"
+                    android:padding="10dp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/coloroutline"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="serif-monospace"
+                    android:background="@drawable/style_background_green"
+                    android:hint="@string/Description"
+                    android:paddingLeft="15dp"
+                    android:padding="10dp" />
+
+                <ImageView
+                    android:id="@+id/add_details"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/sumbitimg"
+                    android:fontFamily="cursive"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:text="Add Details"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>

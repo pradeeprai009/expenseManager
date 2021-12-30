@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/exp_type"
+            android:fontFamily="cursive"
+            android:icon="@drawable/add_exp"
+            android:iconTint="@color/coloroutline"
+            android:title="Expense Type" />
+        <item
+            android:id="@+id/view_exp_type"
+            android:fontFamily="cursive"
+            android:icon="@drawable/view"
+            android:iconTint="@color/coloroutline"
+            android:title="View Expense Type" />
+        <item
+            android:id="@+id/add_exp"
+            android:fontFamily="cursive"
+            android:icon="@drawable/add_exp"
+            android:iconTint="@color/coloroutline"
+            android:title="Add Expense Details" />
+
+        <item
+            android:id="@+id/view_exp"
+            android:fontFamily="cursive"
+            android:icon="@drawable/view"
+            android:iconTint="@color/coloroutline"
+            android:title="View Expense Details" />
+
+        <item
+            android:id="@+id/report"
+            android:fontFamily="cursive"
+            android:iconTint="@color/coloroutline"
+            android:icon="@drawable/view"
+            android:title="Report" />
+        <item
+            android:id="@+id/rateus"
+            android:fontFamily="cursive"
+            android:icon="@drawable/star"
+            android:iconTint="@color/coloroutline"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/share"
+            android:fontFamily="cursive"
+            android:iconTint="@color/coloroutline"
+            android:icon="@drawable/shareit"
+            android:title="Share" />
+
+        <item
+            android:id="@+id/logouthead"
+            android:fontFamily="cursive"
+            android:iconTint="@color/coloroutline"
+            android:icon="@drawable/log"
+            android:title="Logout" />
+    </group>
+
+</menu>

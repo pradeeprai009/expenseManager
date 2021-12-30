@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/viewTYPE"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/style_background_section"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.50"
+            android:fontFamily="sans-serif-black"
+            android:text="ID"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_shadow_start_color" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/hint_name"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_shadow_start_color" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="Edit"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_shadow_start_color" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-black"
+            android:text="Delete"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+    <TextView
+        android:id="@+id/nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/style_background_section"
+        android:fontFamily="serif-monospace"
+        android:padding="10dp"
+        android:text="No Data Found"
+        android:textAlignment="center"
+        android:textColor="@color/coloroutline"
+        android:textSize="18sp" />
+    <ListView
+        android:id="@+id/view_expense_type_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/colorPrimary"
+        android:fontFamily="serif-monospace" />
+
+</LinearLayout>
